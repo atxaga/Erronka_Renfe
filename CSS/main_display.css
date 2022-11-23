@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(130, 215, 255);
+}
+.grid-head {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas:
+    "train ours"
+    "body  body"
+    "nav  foot";
+  /* grid-template-rows: 50px 1fr 30px; */
+  /* grid-template-columns: 150px 1fr; */
+}
+.grid-head > .head-one {
+  grid-area: train;
+  border: black solid 1px;
+}
+.grid-head > .head-two {
+  grid-area: ours;
+  border: black solid 1px;
+  text-align: right;
+}
+.grid-head > .head-tree {
+  grid-area: body;
+  border: black solid 1px;
+  text-align: center;
+}
+
+.text-center {
+
+  border:  1px solid black;
+}

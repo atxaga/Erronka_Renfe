@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: fontname;
+      src: url(FONT/AllianceNo1-Bold.ttf);
+    }
+    body {
+      margin: 0;
+      font-family: fontname;
+      /* background-color: rgb(240, 240, 240); */
+    }
+
+    .topnav {
+      overflow: hidden;
+      background: rgb(63, 94, 251);
+      background: radial-gradient(
+        circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%
+      );
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.user {
+      float: right;
+    }
+    .table {
+      padding: 50px;
+      color: #464646;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+    .table table {
+      margin: auto;
+      /* border: 2px solid #ddd; */
+      box-shadow: #464646;
+      border-radius: 10px;
+    }
+    .table th {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      /* color: white; */
+    }
+    .table th {
+      padding: 10px;
+      /* border: 2px solid #ddd; */
+      border-left: 2px solid #ddd;
+      border-right: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+      border-top: 2px solid #ddd;
+      border-radius: 10px;
+    }
+    .table td {
+      padding: 10px;
+      border-left: 2px solid #ddd;
+      /* border-right: 2px solid #ddd; */
+      /* border-radius: 10px; */
+    }
+    .button {
+      transition: 0.5s;
+      margin: auto;
+      margin-top: 10px;
+      display: block;
+      width: 200px;
+      text-align: center;
+      background: #81005e;
+      padding: 13px 10px;
+      font-size: medium;
+      color: #fff;
+      line-height: 30px;
+      border: 0;
+      border-radius: 4px;
+      position: relative;
+      font-weight: 600;
+    }
+    .button:hover {
+      transition: 0.5s;
+      background: #a7007a;
+    }
+    .title {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      color: #464646;
+    }
+  </style>
+  <body>
+    <div class="topnav">
+      <a class="active">Renfe</a>
+      <a class="user" href="#user">Erabiltzailea</a>
+    </div>
+    <div class="title">
+      <h1>Zure erabiltzailearen datuak</h1>
+    </div>
+    <div class="table">
+      <table>
+        <tr>
+          <th>IZENA ETA ABIZENA</th>
+          <th>JAIOTZE DATA</th>
+          <th>ARGAZKIA</th>
+          <th>LANPOSTUA</th>
+          <th>LOKAZIOA</th>
+          <th>DESKRIBAPENA</th>
+        </tr>
+        <tr>
+          <td>Urtzi Lusarreta</td>
+          <td>2002-03-27</td>
+          <td>
+            <img src="IMG/Ft-perfil.jpg" width="100px" height="65px" alt="" />
+          </td>
+          <td>Geltokiko arduraduna</td>
+          <td>Donostia</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+            autem. Eligendi officiis repellat saepe eos eaque cum exercitationem
+            repudiandae veritatis vitae soluta facilis consectetur ea labore,
+            consequatur ex rem optio.
+          </td>
+        </tr>
+      </table>
+      <button class="button">Update</button>
+    </div>
+  </body>
+</html>
